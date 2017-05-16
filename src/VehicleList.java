@@ -20,13 +20,10 @@ public class VehicleList
         }
         else
         {
-            for(Vehicle v : vehicleList)
+            if(exists(vehicle))
             {
-                if(v.getPlateID().equalsIgnoreCase(vehicle.getPlateID()))
-                {
-                    System.out.println("The provided platenumber is already registered in the list ");
-                    return false;
-                }
+                System.out.println("The provided platenumber is already registered in the list ");
+                return false;
             }
             vehicleList.add(vehicle);
             return  true;
@@ -66,5 +63,35 @@ public class VehicleList
         {
             return true;
         }
+    }
+    public void addAll(Vehicle... vehicles)
+    {
+        int fails = 0;
+        for(int i = 0; i < vehicles.length; i++)
+        {
+            if(exists(vehicles[i]))
+            {
+                fails++;
+            }
+            else
+            {
+                addVehicle(vehicles[i]);
+            }
+        }
+        if(fails > 0)
+        {
+            System.out.println("Ammount of existing vehicles in list: " + fails);
+        }
+    }
+    public boolean exists(Vehicle vehicle)
+    {
+        for(Vehicle v : vehicleList)
+        {
+            if(v.getPlateID().equalsIgnoreCase(vehicle.getPlateID()))
+            {
+                return true;
+            }
+        }
+        return  false;
     }
 }
