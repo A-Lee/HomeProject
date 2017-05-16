@@ -3,18 +3,19 @@
  */
 public class Vehicle
 {
-    private String type,direction;
+    private String type,direction,plateID;
     private double weight,enginepwr;
     private int seat;
     private boolean on;
 
-    public Vehicle(String type, double weight, double enginepwr, int seat)
+    public Vehicle(String type, double weight, double enginepwr, int seat, String plateID)
     {
         this.type = type;
         this.weight = weight;
         this.enginepwr = enginepwr;
         this.seat = seat;
         on = false;
+        this.plateID = plateID;
         direction = "Straight";
     }
 
@@ -39,6 +40,10 @@ public class Vehicle
         {
             System.out.println("Vehicle is already off");
         }
+    }
+    public String getPlateID()
+    {
+        return plateID;
     }
     public String getType() {
         return type;

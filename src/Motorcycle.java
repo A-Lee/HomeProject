@@ -8,9 +8,9 @@ public class Motorcycle extends Vehicle
     private String model, submodel,gear;
     private int year;
     private boolean on;
-    public Motorcycle(String model, String submodel, int year, double weight, double enginepwr)
+    public Motorcycle(String model, String submodel, int year, double weight, double enginepwr, String plateID)
     {
-        super(TYPE, weight, weight, 1);
+        super(TYPE, weight, weight, 1, plateID);
         this.model = model;
         this.submodel = submodel;
         this.year = year;
@@ -43,6 +43,10 @@ public class Motorcycle extends Vehicle
 
     public int getYear() {
         return year;
+    }
+    public String getPlateID()
+    {
+        return super.getPlateID();
     }
 
     public boolean isOn() {

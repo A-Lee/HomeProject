@@ -8,9 +8,9 @@ public class Car extends Vehicle
     private String model, submodel,gear;
     private int year;
     private boolean on;
-    public Car(String model, String submodel, int year, double weight, double enginepwr, int seat)
+    public Car(String model, String submodel, int year, double weight, double enginepwr, int seat, String plateID)
     {
-        super(TYPE, weight, weight, seat);
+        super(TYPE, weight, weight, seat, plateID);
         this.model = model;
         this.submodel = submodel;
         this.year = year;
@@ -24,6 +24,11 @@ public class Car extends Vehicle
     public void turnOff()
     {
         super.turnOff();
+    }
+
+    public String getPlateID()
+    {
+        return super.getPlateID();
     }
 
     public void changeGear(int choise)
