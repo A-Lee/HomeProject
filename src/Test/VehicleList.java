@@ -1,3 +1,5 @@
+package Test;
+
 import java.util.ArrayList;
 
 /**
@@ -15,7 +17,7 @@ public class VehicleList
     {
         if(vehicle.equals(null))
         {
-            System.out.println("Vehicle object is invalid!");
+            System.out.println("Test.Vehicle object is invalid!");
             return false;
         }
         else
@@ -38,7 +40,7 @@ public class VehicleList
         else
         {
             vehicleList.remove(index);
-            System.out.println("Vehicle has been removed");
+            System.out.println("Test.Vehicle has been removed");
         }
     }
     public Vehicle getVehicle(int index)

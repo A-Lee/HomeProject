@@ -1,9 +1,11 @@
+package Test;
+
 /**
  * Created by Ali on 11.05.2017.
  */
 public class Motorcycle extends Vehicle
 {
-    private static final String TYPE = "Motorcycle";
+    private static final String TYPE = "Test.Motorcycle";
 
     private String model, submodel,gear;
     private int year;

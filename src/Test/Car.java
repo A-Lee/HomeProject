@@ -1,9 +1,11 @@
+package Test;
+
 /**
  * Created by Ali on 11.05.2017.
  */
 public class Car extends Vehicle
 {
-    private static final String TYPE = "Car";
+    private static final String TYPE = "Test.Car";
 
     private String model, submodel,gear;
     private int year;
@@ -41,7 +43,7 @@ public class Car extends Vehicle
         {
             if(gear.equalsIgnoreCase("R"))
             {
-                System.out.println("Car already in reverse");
+                System.out.println("Test.Car already in reverse");
             }
             else
             {

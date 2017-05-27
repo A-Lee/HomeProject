@@ -1,3 +1,5 @@
+package Test;
+
 /**
  * Created by Ali on 10.05.2017.
  */
@@ -27,7 +29,7 @@ public class Vehicle
         }
         else
         {
-            System.out.println("Vehicle is already on");
+            System.out.println("Test.Vehicle is already on");
         }
     }
     public void turnOff()
@@ -38,7 +40,7 @@ public class Vehicle
         }
         else
         {
-            System.out.println("Vehicle is already off");
+            System.out.println("Test.Vehicle is already off");
         }
     }
     public String getPlateID()
