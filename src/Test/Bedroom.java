@@ -21,6 +21,14 @@ public class Bedroom
         this.south = south;
     }
 
+    public void turnOnLamp()
+    {
+        lamp.turnOn();
+    }
+    public void turnOffLamp()
+    {
+        lamp.turnOff();
+    }
     public Lamp getLamp() {
         return lamp;
     }
