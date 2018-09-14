@@ -1,2 +1,2 @@
 # HomeProject
-Being bored sucks
+Bored
